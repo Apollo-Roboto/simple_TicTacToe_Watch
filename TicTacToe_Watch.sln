@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe_Watch", "TicTacToe_Watch\TicTacToe_Watch\TicTacToe_Watch.csproj", "{CE43E9A7-B221-49F6-BC8D-E4679179F88A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe_Watch.Tizen.Wearable", "TicTacToe_Watch\TicTacToe_Watch.Tizen.Wearable\TicTacToe_Watch.Tizen.Wearable.csproj", "{E7F7D83D-BC5D-492C-8978-05C62AAAFF4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE43E9A7-B221-49F6-BC8D-E4679179F88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE43E9A7-B221-49F6-BC8D-E4679179F88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE43E9A7-B221-49F6-BC8D-E4679179F88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE43E9A7-B221-49F6-BC8D-E4679179F88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F7D83D-BC5D-492C-8978-05C62AAAFF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F7D83D-BC5D-492C-8978-05C62AAAFF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F7D83D-BC5D-492C-8978-05C62AAAFF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F7D83D-BC5D-492C-8978-05C62AAAFF4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {350DF36C-A9A6-4AC8-90AA-0FCCEB667AEB}
+	EndGlobalSection
+EndGlobal

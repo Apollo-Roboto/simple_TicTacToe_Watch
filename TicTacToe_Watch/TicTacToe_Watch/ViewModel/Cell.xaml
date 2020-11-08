@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="TicTacToe_Watch.ViewModel.Cell">
+
+	<ContentView.GestureRecognizers>
+		<TapGestureRecognizer
+			Tapped="TapGestureRecognizer_Tapped" />
+	</ContentView.GestureRecognizers>
+
+	<ContentView.Content>
+
+		<AbsoluteLayout>
+
+			<!--<Path
+				AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+				AbsoluteLayout.LayoutFlags="All"
+				x:Name="x_path"
+				Stroke="{Binding Stroke}"
+				StrokeThickness="{Binding StrokeThickness}"
+				Aspect="Uniform"
+				Data="M 0,0 L 100, 100 M 0,100 L 100,0"
+				StrokeLineCap="Round"
+				IsVisible="False" />
+
+			<Path
+				AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+				AbsoluteLayout.LayoutFlags="All"
+				x:Name="o_path"
+				Stroke="{Binding Stroke}"
+				StrokeThickness="{Binding StrokeThickness}"
+				Aspect="Uniform"
+				Data="M 0,50 A 50,50 0 0,0 100,50 A 50,50 0 0,0 0,50"
+				StrokeLineCap="Round"
+				IsVisible="False" />-->
+
+			<Image
+				AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+				AbsoluteLayout.LayoutFlags="All"
+				x:Name="x_img"
+				Source="images/TTT_X.png"
+				IsVisible="false" />
+			
+			<Image
+				AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+				AbsoluteLayout.LayoutFlags="All"
+				x:Name="o_img"
+				Source="images/TTT_O.png"
+				IsVisible="false" />
+
+		</AbsoluteLayout>
+
+
+	</ContentView.Content>
+
+</ContentView>

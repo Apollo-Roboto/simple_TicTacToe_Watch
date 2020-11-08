@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:System="clr-namespace:System;assembly=mscorlib"
+	xmlns:vm="clr-namespace:TicTacToe_Watch.ViewModel"
+	x:Class="TicTacToe_Watch.ViewModel.TicTacToe">
+	<ContentView.Resources>
+
+	</ContentView.Resources>
+
+	<ContentView.Content>
+
+		<AbsoluteLayout>
+
+			<Image
+				AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+				AbsoluteLayout.LayoutFlags="All"
+				Source="images/TTT_Grid.png"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="CenterAndExpand" />
+			<Image
+				AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+				AbsoluteLayout.LayoutFlags="All"
+				Source="images/Vignette.png"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="CenterAndExpand" />
+
+			<Grid
+				AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+				AbsoluteLayout.LayoutFlags="All"
+				VerticalOptions="CenterAndExpand"
+				HorizontalOptions="CenterAndExpand"
+				RowSpacing="34"
+				ColumnSpacing="34">
+				<Grid.RowDefinitions>
+					<RowDefinition
+						Height="50" />
+					<RowDefinition
+						Height="50" />
+					<RowDefinition
+						Height="50" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition
+						Width="50" />
+					<ColumnDefinition
+						Width="50" />
+					<ColumnDefinition
+						Width="50" />
+				</Grid.ColumnDefinitions>
+
+				<Image
+					Grid.Column="0"
+					Grid.Row="0"
+					Grid.ColumnSpan="3"
+					x:Name="th_line"
+					Source="images/TTT_CrossHorizontal.png"
+					IsVisible="false" />
+				<Image
+					Grid.Column="0"
+					Grid.Row="1"
+					Grid.ColumnSpan="3"
+					x:Name="mh_line"
+					Source="images/TTT_CrossHorizontal.png"
+					IsVisible="false" />
+				<Image
+					Grid.Column="0"
+					Grid.Row="2"
+					Grid.ColumnSpan="3"
+					x:Name="bh_line"
+					Source="images/TTT_CrossHorizontal.png"
+					IsVisible="false" />
+				<Image
+					Grid.Column="0"
+					Grid.Row="0"
+					Grid.RowSpan="3"
+					x:Name="lv_line"
+					Source="images/TTT_CrossVertical.png"
+					IsVisible="false" />
+				<Image
+					Grid.Column="1"
+					Grid.Row="0"
+					Grid.RowSpan="3"
+					x:Name="mv_line"
+					Source="images/TTT_CrossVertical.png"
+					IsVisible="false" />
+				<Image
+					Grid.Column="2"
+					Grid.Row="0"
+					Grid.RowSpan="3"
+					x:Name="rv_line"
+					Source="images/TTT_CrossVertical.png"
+					IsVisible="false" />
+				<Image
+					Grid.Column="0"
+					Grid.Row="0"
+					Grid.ColumnSpan="3"
+					Grid.RowSpan="3"
+					x:Name="frontDiag_line"
+					Source="images/TTT_CrossDiag.png"
+					IsVisible="false" />
+				<Image
+					Grid.Column="0"
+					Grid.Row="0"
+					Grid.ColumnSpan="3"
+					Grid.RowSpan="3"
+					x:Name="backDiag_line"
+					Source="images/TTT_CrossDiag.png"
+					Rotation="90"
+					IsVisible="false" />
+
+				<vm:Cell
+					x:Name="cell_00"
+					Grid.Column="0"
+					Grid.Row="0"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_10"
+					Grid.Column="1"
+					Grid.Row="0"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_20"
+					Grid.Column="2"
+					Grid.Row="0"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_01"
+					Grid.Column="0"
+					Grid.Row="1"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_11"
+					Grid.Column="1"
+					Grid.Row="1"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_21"
+					Grid.Column="2"
+					Grid.Row="1"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_02"
+					Grid.Column="0"
+					Grid.Row="2"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_12"
+					Grid.Column="1"
+					Grid.Row="2"
+					Tapped="Cell_Tapped" />
+				<vm:Cell
+					x:Name="cell_22"
+					Grid.Column="2"
+					Grid.Row="2"
+					Tapped="Cell_Tapped" />
+			</Grid>
+
+		</AbsoluteLayout>
+
+
+	</ContentView.Content>
+</ContentView>
