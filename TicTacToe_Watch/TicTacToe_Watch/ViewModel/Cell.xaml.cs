@@ -19,27 +19,6 @@ namespace TicTacToe_Watch.ViewModel
 			O
 		}
 
-		//private double strokeThickness;
-		//public double StrokeThickness
-		//{
-		//	get => strokeThickness;
-		//	set
-		//	{
-		//		strokeThickness = value;
-		//		OnPropertyChanged();
-		//	}
-		//}
-		//private Brush stroke;
-		//public Brush Stroke
-		//{
-		//	get => stroke;
-		//	set
-		//	{
-		//		stroke = value;
-		//		OnPropertyChanged();
-		//	}
-		//}
-
 		private CellState state { get; set; }
 		public CellState State
 		{
